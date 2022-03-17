@@ -1,0 +1,8 @@
+<div class="container">
+  <div class="title">PROVINCIAS {{provinces.length}}</div>
+  <div class="list">
+    <div *ngFor="let province of provinces">
+      <app-province-card [province]="province" (provinceToRemove)="removeProvince($event)"></app-province-card>
+    </div>
+  </div>
+</div>

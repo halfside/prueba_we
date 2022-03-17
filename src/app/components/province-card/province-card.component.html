@@ -1,0 +1,12 @@
+<div class="card">
+    <div class="row align-items-center">
+        <div class="col-md-11">
+            <div class="province-name">{{province.NOMBRE_PROVINCIA}}</div>
+        </div>
+        <div class="col-md-1 text-end">
+            <div class="icon">
+                <i class="fas fa-times-circle" (click)="deleteProvince(province.CODPROV);$event.stopPropagation()" title="Pulse aquí para eliminar la provincia"></i>
+            </div>
+        </div>
+    </div>
+</div>
