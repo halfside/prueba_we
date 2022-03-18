@@ -1,0 +1,24 @@
+<div class="container" *ngIf="!loading">
+    <div class="title">{{provinceData.title | uppercase}}</div>
+    <div class="subtitle">MUNICIPIOS DESTACADOS</div>
+    <div class="cities">
+        <div *ngFor="let ciudad of provinceData.ciudades">
+            <app-city-card [city]="ciudad"></app-city-card>
+        </div>
+    </div>
+    <div class="title mt-4 mb-3">Previsión para {{provinceData.provincia.NOMBRE_PROVINCIA}}</div>
+    <div class="forecast">
+        <div class="card">
+            <div class="card-header">HOY</div>
+            <div class="card-body">
+                {{provinceData.today.p}}
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">MAÑANA</div>
+            <div class="card-body">
+                {{provinceData.tomorrow.p}}
+            </div>
+        </div>
+    </div>
+</div>

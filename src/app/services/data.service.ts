@@ -12,6 +12,10 @@ export class DataService {
   ) { }
 
   getAllProvinces(): Observable<any> {
-    return this.httpClient.get('https://www.el-tiempo.net/api/json/v2/provincias')
+    return this.httpClient.get('https://www.el-tiempo.net/api/json/v2/provincias');
+  }
+
+  getProvinceInfo(id: string): Observable<any>{
+    return this.httpClient.get(`https://www.el-tiempo.net/api/json/v2/provincias/${id}`);
   }
 }

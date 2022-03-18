@@ -1,0 +1,42 @@
+@media (max-width: 599px) {
+    .card {
+        width: 100%;
+    }
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(144, 182, 215);
+    width: 390px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+.city-name {
+    font-weight: 600;
+    color: #143e68;
+    flex-basis: 230px;
+}
+
+.city-icon {
+    flex-basis: 60px;
+}
+
+.city-temperature-max {
+    flex-basis: 55px;
+    color: rgb(20, 132, 3);
+    font-weight: 600;
+}
+
+.city-temperature-min {
+    flex-basis: 45px;
+    color: rgb(0, 72, 255);
+    font-weight: 600;
+}
+
+.city-icon img {
+    max-height: 24px;
+}

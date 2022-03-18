@@ -7,12 +7,19 @@
     font-weight: 900;
     font-size: 1.5rem;
     margin-bottom: 15px;
-    border-bottom: 1px solid;
+    color: #143e68;
 }
 
-.list{
-    max-height: 70vh;
+.list {
+    max-height: 50vh;
     overflow-y: auto;
     overflow-x: hidden;
-    margin-bottom: 65px;
+}
+
+@media (max-width: 599px) {
+    .list {
+        max-height: 60vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
 }

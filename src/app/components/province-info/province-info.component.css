@@ -1,0 +1,55 @@
+.container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.title {
+    font-weight: 900;
+    font-size: 1.6rem;
+    color: #143e68;
+    text-align: center;
+}
+
+.subtitle {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #143e68;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cities {
+    max-width: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-flow: column wrap;
+}
+
+.forecast {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    max-width: 900px;
+    margin-bottom: 80px;
+}
+
+.forecast .card {
+    margin-bottom: 20px;
+    background-color: rgb(144, 182, 215);
+    color: #103152;
+}
+
+.forecast .card .card-header {
+    background-color: #103152;
+    color: white;
+    font-weight: 700;
+    font-size: 1.3rem;
+}

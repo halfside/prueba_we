@@ -1,0 +1,9 @@
+<div class="card">
+    <div class="city-name">{{city.name}}</div>
+    <div class="city-icon" *ngIf="city.temperatures.min >10"><img src="../../assets/icons/sun.png" alt="sun"></div>
+    <div class="city-icon" *ngIf="city.temperatures.min <0"><img src="../../assets/icons/snow.png" alt="snow"></div>
+    <div class="city-icon" *ngIf="city.temperatures.min >=0 && city.temperatures.min <=10"><img
+            src="../../assets/icons/cloud.png" alt="cloud"></div>
+    <div class="city-temperature-max" title="Temperatura máxima"><i class="fas fa-long-arrow-alt-up"></i>{{city.temperatures.max}}ºC</div>
+    <div class="city-temperature-min" title="Temperatura mínima"><i class="fas fa-long-arrow-alt-down"></i>{{city.temperatures.min}}ºC</div>
+</div>

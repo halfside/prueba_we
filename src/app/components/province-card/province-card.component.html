@@ -1,11 +1,13 @@
-<div class="card">
-    <div class="row align-items-center">
+<div class="card" routerLink="{{'provincia/' + province.CODPROV }}"
+    title="Ver el tiempo en la provincia de {{province.NOMBRE_PROVINCIA}}">
+    <div class="row">
         <div class="col-md-11">
-            <div class="province-name">{{province.NOMBRE_PROVINCIA}}</div>
+            <div class="province-name">{{province.NOMBRE_PROVINCIA | uppercase}}</div>
         </div>
-        <div class="col-md-1 text-end">
+        <div class="col-md-1">
             <div class="icon">
-                <i class="fas fa-times-circle" (click)="deleteProvince(province.CODPROV);$event.stopPropagation()" title="Pulse aquí para eliminar la provincia"></i>
+                <i class="fas fa-times-circle" (click)="deleteProvince(province.CODPROV);$event.stopPropagation()"
+                    title="Pulse aquí para eliminar la provincia"></i>
             </div>
         </div>
     </div>
