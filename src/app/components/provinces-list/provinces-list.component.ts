@@ -29,9 +29,7 @@ export class ProvincesListComponent implements OnInit {
       this.provinces.push(...res.provincias);
       this.provinces.sort((a, b) => {
         return a.NOMBRE_PROVINCIA.localeCompare(b.NOMBRE_PROVINCIA);
-      });
-      console.log(res);
-      
+      });      
       this.loading = false
     }, error => {
       this.error = true;
