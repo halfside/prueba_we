@@ -17,3 +17,14 @@ Go to project folder
 Run _'npm i'_
 
 Then run _'ng serve'_
+
+## Extra Dependencies
+@fortawesome/angular-fontawesome
+
+@fortawesome/fontawesome-free
+
+@fortawesome/fontawesome-svg-core
+
+@fortawesome/free-solid-svg-icons
+
+bootstrap
